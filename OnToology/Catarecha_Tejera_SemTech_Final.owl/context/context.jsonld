@@ -1,0 +1,508 @@
+{
+  "@context" : {
+    "Diagnosis" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Diagnosis"
+    },
+    "Necator" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Necator"
+    },
+    "NCIT_A35" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_A35"
+    },
+    "Trichuris" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Trichuris"
+    },
+    "Africa" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#Africa"
+    },
+    "NCIT_C2890" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C2890"
+    },
+    "Fasciola" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Fasciola"
+    },
+    "Trematodiasis" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#Trematodiasis"
+    },
+    "Schistosoma" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Schistosoma"
+    },
+    "infrastructureHasID" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#infrastructureHasID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NCIT_C39295" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C39295"
+    },
+    "hasWorkers" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#hasWorkers",
+      "@type" : "@id"
+    },
+    "includes" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#includes",
+      "@type" : "@id"
+    },
+    "NCIT_C128399" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C128399"
+    },
+    "hasVector" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#hasVector",
+      "@type" : "@id"
+    },
+    "InfectiousAgent" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent"
+    },
+    "NCIT_C27864" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C27864"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "prescribe" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#prescribe",
+      "@type" : "@id"
+    },
+    "Taenia" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Taenia"
+    },
+    "isAttendedBy" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isAttendedBy",
+      "@type" : "@id"
+    },
+    "NCIT_C35084" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C35084"
+    },
+    "holds" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#holds",
+      "@type" : "@id"
+    },
+    "directs" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#directs",
+      "@type" : "@id"
+    },
+    "Treponema" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Treponema"
+    },
+    "NCIT_P390" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P390"
+    },
+    "isPrescribedBy" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isPrescribedBy",
+      "@type" : "@id"
+    },
+    "NCIT_P381" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P381"
+    },
+    "handles" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#handles",
+      "@type" : "@id"
+    },
+    "Asia" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#Asia"
+    },
+    "DengueVirus" : {
+      "@id" : "http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#DengueVirus"
+    },
+    "isTreatedWith" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isTreatedWith",
+      "@type" : "@id"
+    },
+    "Oncocerca" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Oncocerca"
+    },
+    "hasAgent" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#hasAgent",
+      "@type" : "@id"
+    },
+    "NCIT_C85180" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C85180"
+    },
+    "Doctor" : {
+      "@id" : "http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor"
+    },
+    "InfectionVector" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#InfectionVector"
+    },
+    "CentralAmerica" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#CentralAmerica"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "personHasID" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#personHasID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isPartOf" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isPartOf",
+      "@type" : "@id"
+    },
+    "NCIT_P325" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P325"
+    },
+    "NCIT_C34861" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C34861"
+    },
+    "NCIT_C34463" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C34463"
+    },
+    "NCIT_C35805" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C35805"
+    },
+    "NCIT_C34838" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C34838"
+    },
+    "isTreatedIn" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isTreatedIn",
+      "@type" : "@id"
+    },
+    "Simulium" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Simulium"
+    },
+    "inSubset" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#inSubset"
+    },
+    "NCIT_A24" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_A24"
+    },
+    "Oceania" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Oceania"
+    },
+    "NCIT_P207" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P207"
+    },
+    "affects" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#affects",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://www.owl-ontologies.com/Hospital-ver2.owl#Person"
+    },
+    "Dracunculus" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Dracunculus"
+    },
+    "Virus" : {
+      "@id" : "http://purl.org/biotop/biotop.owl#Virus"
+    },
+    "Europe" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Europe"
+    },
+    "Echinococcus" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Echinococcus"
+    },
+    "areDiagnosedBy" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#areDiagnosedBy",
+      "@type" : "@id"
+    },
+    "isMadeBy" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isMadeBy",
+      "@type" : "@id"
+    },
+    "NCIT_P394" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P394"
+    },
+    "NCIT_C41353" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C41353"
+    },
+    "Ascaris" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Ascaris"
+    },
+    "NCIT_P107" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P107"
+    },
+    "Patient" : {
+      "@id" : "http://www.owl-ontologies.com/Hospital-ver2.owl#Patient"
+    },
+    "Treatment" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Treatment"
+    },
+    "Filariodideae" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Filariodideae"
+    },
+    "isTreatmentPlaceFor" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isTreatmentPlaceFor",
+      "@type" : "@id"
+    },
+    "NorthAmerica" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#NorthAmerica"
+    },
+    "NCIT_C34767" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C34767"
+    },
+    "Parasite" : {
+      "@id" : "http://purl.org/biotop/biotop.owl#Parasite"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "NCIT_P106" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P106"
+    },
+    "NCIT_NHC0" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_NHC0"
+    },
+    "isDirectedBy" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isDirectedBy",
+      "@type" : "@id"
+    },
+    "NCIT_A28" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_A28"
+    },
+    "causes" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#causes",
+      "@type" : "@id"
+    },
+    "NCIT_C34683" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C34683"
+    },
+    "make" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#make",
+      "@type" : "@id"
+    },
+    "NCIT_C34528" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C34528"
+    },
+    "NCIT_P396" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P396"
+    },
+    "PrimaryHealthCareCenter" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#PrimaryHealthCareCenter"
+    },
+    "HealthCareSystem" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#HealthCareSystem"
+    },
+    "NCIT_P375" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P375"
+    },
+    "Leprosy" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#Leprosy"
+    },
+    "NCIT_P317" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P317"
+    },
+    "bearerOf" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#bearerOf",
+      "@type" : "@id"
+    },
+    "NCIT_P391" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P391"
+    },
+    "personHasName" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#personHasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SouthAmerica" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#SouthAmerica"
+    },
+    "NCIT_C28356" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C28356"
+    },
+    "NCIT_C34771" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C34771"
+    },
+    "NCIT_C84677" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C84677"
+    },
+    "NCIT_C84604" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C84604"
+    },
+    "NCIT_C41352" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C41352"
+    },
+    "NCIT_C84682" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C84682"
+    },
+    "Mycobacterium" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Mycobacterium"
+    },
+    "GeographicalZone" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#GeographicalZone"
+    },
+    "isAppliedTo" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isAppliedTo",
+      "@type" : "@id"
+    },
+    "NCIT_P378" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P378"
+    },
+    "NCIT_P108" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P108"
+    },
+    "attends" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#attends",
+      "@type" : "@id"
+    },
+    "NCIT_C28182" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C28182"
+    },
+    "Lyssavirus" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Lyssavirus"
+    },
+    "HealthCareInfrastructure" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#HealthCareInfrastructure"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "transmits" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#transmits",
+      "@type" : "@id"
+    },
+    "NCIT_C3439" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C3439"
+    },
+    "Staff" : {
+      "@id" : "http://www.owl-ontologies.com/Hospital-ver2.owl#Staff"
+    },
+    "source" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#source"
+    },
+    "Leishmania" : {
+      "@id" : "http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#Leishmania"
+    },
+    "Strongyloides" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Strongyloides"
+    },
+    "ClinicalHistory" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#ClinicalHistory"
+    },
+    "Hospital" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Hospital"
+    },
+    "Tse-tseFly" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Tse-tseFly"
+    },
+    "TriatomineBug" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#TriatomineBug"
+    },
+    "NCIT_P397" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P397"
+    },
+    "NCIT_P389" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P389"
+    },
+    "PhlebotomineSandFly" : {
+      "@id" : "http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#PhlebotomineSandFly"
+    },
+    "NCIT_P322" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P322"
+    },
+    "NCIT_C35085" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C35085"
+    },
+    "NCIT_C34520" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C34520"
+    },
+    "worksIn" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#worksIn",
+      "@type" : "@id"
+    },
+    "NCIT_C128392" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C128392"
+    },
+    "Ancylostoma" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Ancylostoma"
+    },
+    "NCIT_C35000" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C35000"
+    },
+    "isBorneBy" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isBorneBy",
+      "@type" : "@id"
+    },
+    "has" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#has",
+      "@type" : "@id"
+    },
+    "Aedes" : {
+      "@id" : "http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#Aedes"
+    },
+    "NCIT_P395" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P395"
+    },
+    "Chlamydia" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Chlamydia"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasDbXref" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+    },
+    "NCIT_C84751" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C84751"
+    },
+    "suffers" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#suffers",
+      "@type" : "@id"
+    },
+    "NCIT_C128360" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C128360"
+    },
+    "isOwnedBy" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isOwnedBy",
+      "@type" : "@id"
+    },
+    "Nurse" : {
+      "@id" : "http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse"
+    },
+    "endemicIn" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#endemicIn",
+      "@type" : "@id"
+    },
+    "NCIT_C128398" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C128398"
+    },
+    "NCIT_P387" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P387"
+    },
+    "NCIT_C128387" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C128387"
+    },
+    "diagnoses" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#diagnoses",
+      "@type" : "@id"
+    },
+    "isHandledIn" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isHandledIn",
+      "@type" : "@id"
+    },
+    "Bacteria" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Bacteria"
+    },
+    "Trypanosoma" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Trypanosoma"
+    },
+    "Opistorchis" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Opistorchis"
+    },
+    "NCIT_A33" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_A33"
+    },
+    "NCIT_C84541" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C84541"
+    },
+    "NCIT_C84629" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C84629"
+    },
+    "NCIT_P393" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P393"
+    },
+    "isRecordedIn" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#isRecordedIn",
+      "@type" : "@id"
+    },
+    "NCIT_C41354" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C41354"
+    },
+    "NeglectedDisease" : {
+      "@id" : "http://purl.obolibrary.org/obo/bero.owl#NeglectedDisease"
+    },
+    "Culex" : {
+      "@id" : "http://www.semanticweb.org/Extended_NTDO#Culex"
+    },
+    "IAO_0000115" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000115"
+    }
+  }
+}

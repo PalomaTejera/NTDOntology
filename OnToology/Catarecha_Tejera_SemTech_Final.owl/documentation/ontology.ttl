@@ -1,0 +1,2615 @@
+@prefix : <http://www.semanticweb.org/Extended_NTDO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/Extended_NTDO#> .
+
+<http://www.semanticweb.org/Extended_NTDO> rdf:type owl:Ontology ;
+                                            <http://purl.org/dc/terms/creator> "Pablo Catarecha Zoido" ,
+                                                                               "Paloma Tejera Nevado" ;
+                                            <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
+                                            <http://purl.org/dc/terms/title> "Extended Neglected Tropical Disease Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
+                                             rdfs:label "definition"@en ,
+                                                        "definition" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_A24
+<http://purl.obolibrary.org/obo/NCIT_A24> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000115> "An association that indicates a PCDC AML concept is a Permissible Value for a PCDC AML Variable concept." ;
+                                          <http://purl.obolibrary.org/obo/NCIT_NHC0> "A24" ;
+                                          <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                          <http://purl.obolibrary.org/obo/NCIT_P108> "Is_PCDC_AML_Permissible_Value_For_Variable" ;
+                                          rdfs:label "Is_PCDC_AML_Permissible_Value_For_Variable" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_A24> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An association that indicates a PCDC AML concept is a Permissible Value for a PCDC AML Variable concept." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_A28
+<http://purl.obolibrary.org/obo/NCIT_A28> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000115> "An association that indicates a PCDC EWS concept is a Permissible Value for a specific PCDC EWS Variable concept." ;
+                                          <http://purl.obolibrary.org/obo/NCIT_NHC0> "A28" ;
+                                          <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                          <http://purl.obolibrary.org/obo/NCIT_P108> "Is_PCDC_EWS_Permissible_Value_For_Variable" ;
+                                          rdfs:label "Is_PCDC_EWS_Permissible_Value_For_Variable" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_A28> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An association that indicates a PCDC EWS concept is a Permissible Value for a specific PCDC EWS Variable concept." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_A33
+<http://purl.obolibrary.org/obo/NCIT_A33> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000115> "An association that indicates a concept is a dedicated Permissible Value concept for a specific PCDC GCT Variable." ;
+                                          <http://purl.obolibrary.org/obo/NCIT_NHC0> "A33" ;
+                                          <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                          <http://purl.obolibrary.org/obo/NCIT_P108> "Is_PCDC_GCT_Permissible_Value_For_Variable" ;
+                                          rdfs:label "Is_PCDC_GCT_Permissible_Value_For_Variable" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_A33> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An association that indicates a concept is a dedicated Permissible Value concept for a specific PCDC GCT Variable." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_A35
+<http://purl.obolibrary.org/obo/NCIT_A35> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000115> "An association that indicates a concept contains dedicated permissible value concept for a specific PCDC ALL Variable." ;
+                                          <http://purl.obolibrary.org/obo/NCIT_NHC0> "A35" ;
+                                          <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                          <http://purl.obolibrary.org/obo/NCIT_P108> "Is_PCDC_ALL_Permissible_Value_For_Variable" ;
+                                          rdfs:label "Is_PCDC_ALL_Permissible_Value_For_Variable" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_A35> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An association that indicates a concept contains dedicated permissible value concept for a specific PCDC ALL Variable." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_NHC0
+<http://purl.obolibrary.org/obo/NCIT_NHC0> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property representing a concept unique identifier within the NCI Enterprise Vocabulary Service's NCI Thesaurus." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "NHC0" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "code" ;
+                                           rdfs:label "code" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_NHC0> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property representing a concept unique identifier within the NCI Enterprise Vocabulary Service's NCI Thesaurus." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P106
+<http://purl.obolibrary.org/obo/NCIT_P106> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property that represents a description of the sort of thing or category to which a concept belongs in the context of the UMLS semantic network." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "P106" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P107> "Semantic Type" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "Semantic_Type" ;
+                                           rdfs:label "Semantic_Type" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_P106> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property that represents a description of the sort of thing or category to which a concept belongs in the context of the UMLS semantic network." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P107
+<http://purl.obolibrary.org/obo/NCIT_P107> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property representing an alternative Preferred Name for use in some NCI systems." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "P107" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P107> "Display Name" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "Display_Name" ;
+                                           rdfs:label "Display_Name" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_P107> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property representing an alternative Preferred Name for use in some NCI systems." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P108
+<http://purl.obolibrary.org/obo/NCIT_P108> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property representing the word or phrase that NCI uses by preference to refer to the concept." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "P108" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P107> "Preferred Name" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "Preferred_Name" ;
+                                           rdfs:label "Preferred_Name" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_P108> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property representing the word or phrase that NCI uses by preference to refer to the concept." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P207
+<http://purl.obolibrary.org/obo/NCIT_P207> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property representing the concept unique identifier (CUI) assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "P207" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P107> "UMLS CUI" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "UMLS_CUI" ;
+                                           rdfs:label "UMLS_CUI" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_P207> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property representing the concept unique identifier (CUI) assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P317
+<http://purl.obolibrary.org/obo/NCIT_P317> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property used to flag terms that are part of an FDA data standard manual, including Route of Administration, Dosage Form, Package Type and Potency." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "P317" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P107> "FDA Table" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "FDA_Table" ;
+                                           rdfs:label "FDA_Table" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_P317> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property used to flag terms that are part of an FDA data standard manual, including Route of Administration, Dosage Form, Package Type and Potency." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P322
+<http://purl.obolibrary.org/obo/NCIT_P322> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept. This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "P322" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P107> "Contributing Source" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "Contributing_Source" ;
+                                           rdfs:label "Contributing_Source" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_P322> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept. This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P325
+<http://purl.obolibrary.org/obo/NCIT_P325> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property representing the English language definition of a concept from a source other than NCI." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "P325" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P107> "[source] Definition" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "ALT_DEFINITION" ;
+                                           rdfs:label "ALT_DEFINITION" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property representing the English language definition of a concept from a source other than NCI." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P375
+<http://purl.obolibrary.org/obo/NCIT_P375> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A property representing that a term in another terminology has been mapped to a term in NCIt and describes the relationship between the mapped terms." ;
+                                           <http://purl.obolibrary.org/obo/NCIT_NHC0> "P375" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                           <http://purl.obolibrary.org/obo/NCIT_P108> "Maps_To" ;
+                                           rdfs:label "Maps_To" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_P375> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A property representing that a term in another terminology has been mapped to a term in NCIt and describes the relationship between the mapped terms." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P378
+<http://purl.obolibrary.org/obo/NCIT_P378> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P381
+<http://purl.obolibrary.org/obo/NCIT_P381> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P387
+<http://purl.obolibrary.org/obo/NCIT_P387> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P389
+<http://purl.obolibrary.org/obo/NCIT_P389> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P390
+<http://purl.obolibrary.org/obo/NCIT_P390> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P391
+<http://purl.obolibrary.org/obo/NCIT_P391> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P393
+<http://purl.obolibrary.org/obo/NCIT_P393> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P394
+<http://purl.obolibrary.org/obo/NCIT_P394> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P395
+<http://purl.obolibrary.org/obo/NCIT_P395> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P396
+<http://purl.obolibrary.org/obo/NCIT_P396> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P397
+<http://purl.obolibrary.org/obo/NCIT_P397> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "database_cross_reference" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+<http://www.geneontology.org/formats/oboInOwl#inSubset> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "in_subset" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#source
+<http://www.geneontology.org/formats/oboInOwl#source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/Extended_NTDO#affects
+:affects rdf:type owl:ObjectProperty ;
+         owl:inverseOf :suffers ;
+         rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+         rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#areDiagnosedBy
+:areDiagnosedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :diagnoses ;
+                rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+                rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#attends
+:attends rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isAttendedBy ;
+         rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Staff> ;
+         rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#bearerOf
+:bearerOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isBorneBy ;
+          rdfs:domain <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> ;
+          rdfs:range <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#causes
+:causes rdf:type owl:ObjectProperty ;
+        owl:inverseOf :hasAgent ;
+        rdfs:domain <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent> ;
+        rdfs:range <http://purl.obolibrary.org/obo/NCIT_C28356> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#diagnoses
+:diagnoses rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+           rdfs:range <http://purl.obolibrary.org/obo/NCIT_C28356> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#directs
+:directs rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isDirectedBy ;
+         rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+         rdfs:range :HealthCareInfrastructure .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#endemicIn
+:endemicIn rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+           rdfs:range <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#handles
+:handles rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isHandledIn ;
+         rdfs:domain :HealthCareSystem ;
+         rdfs:range <http://purl.obolibrary.org/obo/NCIT_C28356> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#has
+:has rdf:type owl:ObjectProperty ;
+     owl:inverseOf :isOwnedBy ;
+     rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+     rdfs:range :ClinicalHistory .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#hasAgent
+:hasAgent rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+          rdfs:range <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#hasVector
+:hasVector rdf:type owl:ObjectProperty ;
+           owl:inverseOf :transmits ;
+           rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+           rdfs:range <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#hasWorkers
+:hasWorkers rdf:type owl:ObjectProperty ;
+            owl:inverseOf :worksIn ;
+            rdfs:domain :HealthCareInfrastructure ;
+            rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Staff> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#holds
+:holds rdf:type owl:ObjectProperty ;
+       owl:inverseOf :isRecordedIn ;
+       rdfs:domain :ClinicalHistory ;
+       rdfs:range [ rdf:type owl:Class ;
+                    owl:unionOf ( :Diagnosis
+                                  :Treatment
+                                )
+                  ] .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#includes
+:includes rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isPartOf ;
+          rdfs:domain :HealthCareSystem ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( <http://www.owl-ontologies.com/Hospital-ver2.owl#Person>
+                                     :HealthCareInfrastructure
+                                   )
+                     ] .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isAppliedTo
+:isAppliedTo rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isTreatedWith ;
+             rdfs:domain :Treatment ;
+             rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isAttendedBy
+:isAttendedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+              rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Staff> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isBorneBy
+:isBorneBy rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent> ;
+           rdfs:range <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isDirectedBy
+:isDirectedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :HealthCareInfrastructure ;
+              rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isHandledIn
+:isHandledIn rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+             rdfs:range :HealthCareSystem .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isMadeBy
+:isMadeBy rdf:type owl:ObjectProperty ;
+          owl:inverseOf :make ;
+          rdfs:domain :Diagnosis ;
+          rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isOwnedBy
+:isOwnedBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :ClinicalHistory ;
+           rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( <http://www.owl-ontologies.com/Hospital-ver2.owl#Person>
+                                      :HealthCareInfrastructure
+                                    )
+                      ] ;
+          rdfs:range :HealthCareSystem .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isPrescribedBy
+:isPrescribedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :prescribe ;
+                rdfs:domain :Treatment ;
+                rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isRecordedIn
+:isRecordedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Diagnosis
+                                          :Treatment
+                                        )
+                          ] ;
+              rdfs:range :ClinicalHistory .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isTreatedIn
+:isTreatedIn rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isTreatmentPlaceFor ;
+             rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+             rdfs:range :HealthCareInfrastructure .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isTreatedWith
+:isTreatedWith rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+               rdfs:range :Treatment .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#isTreatmentPlaceFor
+:isTreatmentPlaceFor rdf:type owl:ObjectProperty ;
+                     rdfs:domain :HealthCareInfrastructure ;
+                     rdfs:range <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#make
+:make rdf:type owl:ObjectProperty ;
+      rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+      rdfs:range :Diagnosis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#prescribe
+:prescribe rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+           rdfs:range :Treatment .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#suffers
+:suffers rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+         rdfs:range <http://purl.obolibrary.org/obo/NCIT_C28356> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#transmits
+:transmits rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> ;
+           rdfs:range <http://purl.obolibrary.org/obo/NCIT_C28356> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#worksIn
+:worksIn rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Staff> ;
+         rdfs:range :HealthCareInfrastructure .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/Extended_NTDO#infrastructureHasID
+:infrastructureHasID rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :HealthCareInfrastructure ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#personHasID
+:personHasID rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Person> ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#personHasName
+:personHasName rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain <http://www.owl-ontologies.com/Hospital-ver2.owl#Person> ;
+               rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/NCIT_C128360
+<http://purl.obolibrary.org/obo/NCIT_C128360> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :endemicIn ;
+                                                                owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#CentralAmerica>
+                                                                                                   <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                                                                 )
+                                                                                   ]
+                                                              ] ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A clinical disorder that is caused by obstruction of the lymphatic system years after filarial infection. It is characterized by painful and profound lymphedema, resulting in significant swelling (elephantiasis) of extremities and genitals." ;
+                                              <http://purl.obolibrary.org/obo/NCIT_NHC0> "C128360" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P108> "Lymphatic Filariasis" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P207> "C0013884" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P325> "A clinical disorder that is caused by obstruction of the lymphatic system years after filarial infection. It is characterized by painful and profound lymphedema, resulting in significant swelling (elephantiasis) of extremities and genitals." ;
+                                              rdfs:comment "Also known as elefantiasis" ;
+                                              rdfs:label "Lymphatic Filariasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128360> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A clinical disorder that is caused by obstruction of the lymphatic system years after filarial infection. It is characterized by painful and profound lymphedema, resulting in significant swelling (elephantiasis) of extremities and genitals." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128360> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "A clinical disorder that is caused by obstruction of the lymphatic system years after filarial infection. It is characterized by painful and profound lymphedema, resulting in significant swelling (elephantiasis) of extremities and genitals." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C128387
+<http://purl.obolibrary.org/obo/NCIT_C128387> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#Trematodiasis> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection that is caused by liver flukes, usually Fasciola hepatica, of sheep, goats, and cattle. Humans become infected by eating uncooked, infested aquatic vegetation (classically watercress). Adult flukes inhabit the bile ducts, gallbladder, and occasionally ectopic sites. Symptoms arise secondary to inflammatory response or obstruction." ;
+                                              <http://purl.obolibrary.org/obo/NCIT_NHC0> "C128387" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P108> "Fasciolosis" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P207> "C0015652" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P325> "A parasitic infection that is caused by liver flukes, usually Fasciola hepatica, of sheep, goats, and cattle. Humans become infected by eating uncooked, infested aquatic vegetation (classically watercress). Adult flukes inhabit the bile ducts, gallbladder, and occasionally ectopic sites. Symptoms arise secondary to inflammatory response or obstruction." ;
+                                              rdfs:label "Fascioliasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128387> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection that is caused by liver flukes, usually Fasciola hepatica, of sheep, goats, and cattle. Humans become infected by eating uncooked, infested aquatic vegetation (classically watercress). Adult flukes inhabit the bile ducts, gallbladder, and occasionally ectopic sites. Symptoms arise secondary to inflammatory response or obstruction." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128387> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "A parasitic infection that is caused by liver flukes, usually Fasciola hepatica, of sheep, goats, and cattle. Humans become infected by eating uncooked, infested aquatic vegetation (classically watercress). Adult flukes inhabit the bile ducts, gallbladder, and occasionally ectopic sites. Symptoms arise secondary to inflammatory response or obstruction." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C128392
+<http://purl.obolibrary.org/obo/NCIT_C128392> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C84751> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "An infection that is caused by the roundworm Ascaris lumbricoides, many cases of which remain asymptomatic. During the transient larval migratory phase, shortness of breath, fever, and eosinophilia can occur. Depending on the intestinal worm burden, a spectrum of gastrointestinal tract symptoms can occur." ;
+                                              <http://purl.obolibrary.org/obo/NCIT_NHC0> "C128392" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P108> "Ascariasis" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P207> "C0003950" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                         "NICHD" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P325> "An infection that is caused by the roundworm Ascaris lumbricoides, many cases of which remain asymptomatic. During the transient larval migratory phase, shortness of breath, fever, and eosinophilia can occur. Depending on the intestinal worm burden, a spectrum of gastrointestinal tract symptoms can occur." ;
+                                              rdfs:label "Ascariasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128392> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An infection that is caused by the roundworm Ascaris lumbricoides, many cases of which remain asymptomatic. During the transient larval migratory phase, shortness of breath, fever, and eosinophilia can occur. Depending on the intestinal worm burden, a spectrum of gastrointestinal tract symptoms can occur." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128392> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection that is caused by the roundworm Ascaris lumbricoides, many cases of which remain asymptomatic. During the transient larval migratory phase, shortness of breath, fever, and eosinophilia can occur. Depending on the intestinal worm burden, a spectrum of gastrointestinal tract symptoms can occur." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C128398
+<http://purl.obolibrary.org/obo/NCIT_C128398> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C84751> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "An infection that is caused by nematodes of the genus Strongyloides, most commonly Strongyloides stercoralis, which is a soil-transmitted helminth, and which is characterized by a variety of gastrointestinal, dermatologic, and, occasionally, pulmonary manifestations. The worm's autoinfective life cycle can lead to hyper-infection and life-threatening dissemination in immunocompromised hosts decades after initial infection." ;
+                                              <http://purl.obolibrary.org/obo/NCIT_NHC0> "C128398" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P108> "Strongyloidiasis" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P207> "C0038463" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P325> "An infection that is caused by nematodes of the genus Strongyloides, most commonly Strongyloides stercoralis, which is a soil-transmitted helminth, and which is characterized by a variety of gastrointestinal, dermatologic, and, occasionally, pulmonary manifestations. The worm's autoinfective life cycle can lead to hyper-infection and life-threatening dissemination in immunocompromised hosts decades after initial infection." ;
+                                              rdfs:label "Strongyloidiasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128398> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An infection that is caused by nematodes of the genus Strongyloides, most commonly Strongyloides stercoralis, which is a soil-transmitted helminth, and which is characterized by a variety of gastrointestinal, dermatologic, and, occasionally, pulmonary manifestations. The worm's autoinfective life cycle can lead to hyper-infection and life-threatening dissemination in immunocompromised hosts decades after initial infection." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128398> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection that is caused by nematodes of the genus Strongyloides, most commonly Strongyloides stercoralis, which is a soil-transmitted helminth, and which is characterized by a variety of gastrointestinal, dermatologic, and, occasionally, pulmonary manifestations. The worm's autoinfective life cycle can lead to hyper-infection and life-threatening dissemination in immunocompromised hosts decades after initial infection." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C128399
+<http://purl.obolibrary.org/obo/NCIT_C128399> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C84751> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "An infection that is caused by the nematode Trichuris trichiura, a soil-transmitted helminth, which is transmitted via food and/or water contaminated with the eggs of the worm. Symptoms are usually mild and include abdominal pain, diarrhea, fatigue, and possibly anemia secondary to blood loss in diarrhea." ;
+                                              <http://purl.obolibrary.org/obo/NCIT_NHC0> "C128399" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P108> "Trichuriasis" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P207> "C0040954" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P325> "An infection that is caused by the nematode Trichuris trichiura, a soil-transmitted helminth, which is transmitted via food and/or water contaminated with the eggs of the worm. Symptoms are usually mild and include abdominal pain, diarrhea, fatigue, and possibly anemia secondary to blood loss in diarrhea." ;
+                                              rdfs:label "Trichuriasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128399> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An infection that is caused by the nematode Trichuris trichiura, a soil-transmitted helminth, which is transmitted via food and/or water contaminated with the eggs of the worm. Symptoms are usually mild and include abdominal pain, diarrhea, fatigue, and possibly anemia secondary to blood loss in diarrhea." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C128399> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection that is caused by the nematode Trichuris trichiura, a soil-transmitted helminth, which is transmitted via food and/or water contaminated with the eggs of the worm. Symptoms are usually mild and include abdominal pain, diarrhea, fatigue, and possibly anemia secondary to blood loss in diarrhea." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C27864
+<http://purl.obolibrary.org/obo/NCIT_C27864> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A successful invasion of a host by an organism that uses the host for food and shelter." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C27864" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Parasitic Infection" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0747256" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "An infection caused by a parasite." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P375> "Ancylostomiasis and necatoriasis, unspecified" ;
+                                             rdfs:label "Parasitic Infection" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C27864> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A successful invasion of a host by an organism that uses the host for food and shelter." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI" ;
+   <http://purl.obolibrary.org/obo/NCIT_P381> "On-line Medical Dictionary"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C27864> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection caused by a parasite." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C27864> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P375> ;
+   owl:annotatedTarget "Ancylostomiasis and necatoriasis, unspecified" ;
+   <http://purl.obolibrary.org/obo/NCIT_P393> "Broader Than" ;
+   <http://purl.obolibrary.org/obo/NCIT_P394> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P395> "126.9" ;
+   <http://purl.obolibrary.org/obo/NCIT_P396> "ICD9CM 2014"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C28182
+<http://purl.obolibrary.org/obo/NCIT_C28182> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C3439> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A life-threatening viral infection caused by the neurotropic Rabies virus. It is transmitted to humans usually from a bite by an infected dog. The initial signs and symptoms include malaise, fever, and headache, followed by the central nervous system manifestations which include abrupt behavioral changes. Paralysis, lethargy, and coma follow the behavioral changes." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C28182" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Rabies" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0034494" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                        "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "A disease of the nervous system caused by the rabies virus.  Rabies is marked by an increase in saliva production, abnormal behavior, and eventual paralysis and death." ,
+                                                                                        "An infection that is caused by the neurotropic Rabies virus, which is most often transmitted to humans via a bite by an infected animal." ;
+                                             rdfs:label "Rabies" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C28182> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A life-threatening viral infection caused by the neurotropic Rabies virus. It is transmitted to humans usually from a bite by an infected dog. The initial signs and symptoms include malaise, fever, and headache, followed by the central nervous system manifestations which include abrupt behavioral changes. Paralysis, lethargy, and coma follow the behavioral changes." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C28182> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "A disease of the nervous system caused by the rabies virus.  Rabies is marked by an increase in saliva production, abnormal behavior, and eventual paralysis and death." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI-GLOSS"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C28182> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection that is caused by the neurotropic Rabies virus, which is most often transmitted to humans via a bite by an infected animal." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C28356
+<http://purl.obolibrary.org/obo/NCIT_C28356> rdf:type owl:Class ;
+                                             owl:equivalentClass <http://purl.obolibrary.org/obo/bero.owl#NeglectedDisease> ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :areDiagnosedBy ;
+                                                               owl:someValuesFrom <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasAgent ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasVector ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/bero.owl#InfectionVector>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :isHandledIn ;
+                                                               owl:someValuesFrom :HealthCareSystem
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Infectious and parasitic diseases endemic in tropical and subtropical zones, including Chagas' disease, leishmaniasis, leprosy, malaria, onchocerciasis, schistosomiasis, sleeping sickness, yellow fever, and others; often water- or insect-borne." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C28356" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Tropical Disease" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C1336827" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ;
+                                             rdfs:label "Tropical Disease" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Infectious and parasitic diseases endemic in tropical and subtropical zones, including Chagas' disease, leishmaniasis, leprosy, malaria, onchocerciasis, schistosomiasis, sleeping sickness, yellow fever, and others; often water- or insect-borne." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C2890
+<http://purl.obolibrary.org/obo/NCIT_C2890> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "An acute infectious disorder that is caused by gram positive or gram negative bacteria; representative examples include pneumococcal, streptococcal, salmonella, and meningeal infections." ;
+                                            <http://purl.obolibrary.org/obo/NCIT_A24> <http://purl.obolibrary.org/obo/NCIT_C168868> ;
+                                            <http://purl.obolibrary.org/obo/NCIT_A35> <http://purl.obolibrary.org/obo/NCIT_C168868> ;
+                                            <http://purl.obolibrary.org/obo/NCIT_NHC0> "C2890" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P107> "Bacterial Infection" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P108> "Bacterial Infection" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P207> "C0004623" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P317> "Patient Code (Appendix B)" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P322> "CTRP" ,
+                                                                                       "FDA" ,
+                                                                                       "NICHD" ,
+                                                                                       "PCDC" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P325> "An acute infectious disorder caused by gram positive or gram negative bacteria." ,
+                                                                                       "An infection caused by a bacterium." ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "IMDRF:E1901" ;
+                                            rdfs:label "Bacterial Infection" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C2890> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An acute infectious disorder that is caused by gram positive or gram negative bacteria; representative examples include pneumococcal, streptococcal, salmonella, and meningeal infections." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C2890> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An acute infectious disorder caused by gram positive or gram negative bacteria." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "FDA" ;
+   <http://purl.obolibrary.org/obo/NCIT_P381> "CDRH"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C2890> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection caused by a bacterium." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C3439
+<http://purl.obolibrary.org/obo/NCIT_C3439> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C28356> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "Any disease caused by a virus." ;
+                                            <http://purl.obolibrary.org/obo/NCIT_A24> <http://purl.obolibrary.org/obo/NCIT_C168868> ;
+                                            <http://purl.obolibrary.org/obo/NCIT_A35> <http://purl.obolibrary.org/obo/NCIT_C168868> ;
+                                            <http://purl.obolibrary.org/obo/NCIT_NHC0> "C3439" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P107> "Viral Infection" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P108> "Viral Infection" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P207> "C0042769" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P317> "Patient Code (Appendix B)" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P322> "CTRP" ,
+                                                                                       "FDA" ,
+                                                                                       "MedDRA" ,
+                                                                                       "NICHD" ,
+                                                                                       "PCDC" ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P325> "Any disease caused by a virus." ;
+                                            <http://purl.obolibrary.org/obo/NCIT_P375> "Viral infection" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "IMDRF:E1907" ;
+                                            rdfs:label "Viral Infection" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C3439> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Any disease caused by a virus." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C3439> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "Any disease caused by a virus." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "FDA" ;
+   <http://purl.obolibrary.org/obo/NCIT_P381> "CDRH"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C3439> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "Any disease caused by a virus." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C3439> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P375> ;
+   owl:annotatedTarget "Viral infection" ;
+   <http://purl.obolibrary.org/obo/NCIT_P393> "Has Synonym" ;
+   <http://purl.obolibrary.org/obo/NCIT_P394> "LLT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P395> "10047461" ;
+   <http://purl.obolibrary.org/obo/NCIT_P396> "MedDRA" ;
+   <http://purl.obolibrary.org/obo/NCIT_P397> "18.1"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34463
+<http://purl.obolibrary.org/obo/NCIT_C34463> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C2890> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#Africa>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#Asia>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#CentralAmerica>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                                                                  :Oceania
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An infection that is caused by Chlamydia trachomatis." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C34463" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Chlamydial Infection" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0008149" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "GDC" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P375> "Chlamydia" ;
+                                             rdfs:label "Trachoma" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34463> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An infection that is caused by Chlamydia trachomatis." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34463> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P375> ;
+   owl:annotatedTarget "Chlamydia" ;
+   <http://purl.obolibrary.org/obo/NCIT_P393> "Has Synonym" ;
+   <http://purl.obolibrary.org/obo/NCIT_P394> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P395> "comorbidity" ;
+   <http://purl.obolibrary.org/obo/NCIT_P396> "GDC"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34463> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P375> ;
+   owl:annotatedTarget "Chlamydia" ;
+   <http://purl.obolibrary.org/obo/NCIT_P393> "Has Synonym" ;
+   <http://purl.obolibrary.org/obo/NCIT_P394> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P395> "risk_factor" ;
+   <http://purl.obolibrary.org/obo/NCIT_P396> "GDC"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34520
+<http://purl.obolibrary.org/obo/NCIT_C34520> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C85180> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection caused by the larval form of Taenia solium. It is a disseminated infection affecting the central nervous system, subcutaneous tissues, lungs, heart and liver. The most serious complications result from infection of the brain parenchyma. Patients may develop seizures, hydrocephalus, encephalopathy and meningoencephalitis." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C34520" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Cysticercosis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0010678" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                        "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "A disseminated infection of tissues or organs that is caused by the larval stage of Taenia solium." ;
+                                             rdfs:label "Cysticercosis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34520> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection caused by the larval form of Taenia solium. It is a disseminated infection affecting the central nervous system, subcutaneous tissues, lungs, heart and liver. The most serious complications result from infection of the brain parenchyma. Patients may develop seizures, hydrocephalus, encephalopathy and meningoencephalitis." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34520> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "A disseminated infection of tissues or organs that is caused by the larval stage of Taenia solium." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34528
+<http://purl.obolibrary.org/obo/NCIT_C34528> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C3439> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#Asia>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#CentralAmerica>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                                                                  :Oceania
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An acute infection caused by Dengue virus. Signs and symptoms include sudden onset of fever, headache, rash, arthralgia, and myalgia. It is transmitted through mosquitoes." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C34528" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Dengue Fever" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0011311" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                        "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "An infection that is caused by the dengue virus, which is transmitted to humans by mosquitoes, and which is characterized by sudden onset of fever, headache, rash, arthralgia, and myalgia. Occasionally, patients develop either dengue hemorrhagic fever (DHF), a more severe form of the disease that is  characterized by plasma leakage due to increased vascular permeability, or dengue shock syndrome (DSS), which can cause circulatory collapse and possibly death." ;
+                                             rdfs:label "Dengue Fever" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34528> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An acute infection caused by Dengue virus. Signs and symptoms include sudden onset of fever, headache, rash, arthralgia, and myalgia. It is transmitted through mosquitoes." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34528> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection that is caused by the dengue virus, which is transmitted to humans by mosquitoes, and which is characterized by sudden onset of fever, headache, rash, arthralgia, and myalgia. Occasionally, patients develop either dengue hemorrhagic fever (DHF), a more severe form of the disease that is  characterized by plasma leakage due to increased vascular permeability, or dengue shock syndrome (DSS), which can cause circulatory collapse and possibly death." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34683
+<http://purl.obolibrary.org/obo/NCIT_C34683> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C34528> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A serious condition caused by Dengue virus infection. Patients present with an acute febrile illness followed by restlessness, irritability, and bleeding. It may lead to hemorrhagic shock and death." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C34683" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Dengue Hemorrhagic Fever" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0019100" ;
+                                             rdfs:label "Dengue Hemorrhagic Fever" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34683> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A serious condition caused by Dengue virus infection. Patients present with an acute febrile illness followed by restlessness, irritability, and bleeding. It may lead to hemorrhagic shock and death." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34767
+<http://purl.obolibrary.org/obo/NCIT_C34767> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#Asia>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection caused by protozoa of the genus Leishmania. It is transmitted to humans via the bite of sandflies. There are three main forms of the disease: cutaneous, mucocutaneous, and visceral leishmaniasis. Cutaneous leishmaniasis causes skin ulcers; mucocutaneous leishmaniasis causes destructive lesions of the mucous membranes of the nose, mouth, and throat; visceral leishmaniasis is the most severe form of the disease and is manifested with anemia, weight loss, hepatomegaly and splenomegaly." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C34767" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Leishmaniasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0023281" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                        "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "A protozoan infection that is caused by members of the genus Leishmania, which is transmitted to humans via the bite of sandflies. There are three main forms of the disease: cutaneous, mucocutaneous, and visceral." ;
+                                             rdfs:label "Leishmaniasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34767> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection caused by protozoa of the genus Leishmania. It is transmitted to humans via the bite of sandflies. There are three main forms of the disease: cutaneous, mucocutaneous, and visceral leishmaniasis. Cutaneous leishmaniasis causes skin ulcers; mucocutaneous leishmaniasis causes destructive lesions of the mucous membranes of the nose, mouth, and throat; visceral leishmaniasis is the most severe form of the disease and is manifested with anemia, weight loss, hepatomegaly and splenomegaly." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34767> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "A protozoan infection that is caused by members of the genus Leishmania, which is transmitted to humans via the bite of sandflies. There are three main forms of the disease: cutaneous, mucocutaneous, and visceral." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34771
+<http://purl.obolibrary.org/obo/NCIT_C34771> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C34767> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A chronic parasitic infection affecting the viscera and caused by Leishmania donovani. Signs and symptoms include fever, anorexia, fatigue, lymphadenopathy, anemia, and hepatosplenomegaly. If left untreated it may lead to death." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C34771" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Kala-Azar" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0023290" ;
+                                             rdfs:label "Kala-Azar" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34771> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A chronic parasitic infection affecting the viscera and caused by Leishmania donovani. Signs and symptoms include fever, anorexia, fatigue, lymphadenopathy, anemia, and hepatosplenomegaly. If left untreated it may lead to death." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34838
+<http://purl.obolibrary.org/obo/NCIT_C34838> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C84751> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A disorder caused by an infection with hookworms of the genus Necator, which settle in the host's small intestine, and cause abdominal pain, diarrhea, weight loss, and anemia." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C34838" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Necatoriasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0027528" ;
+                                             rdfs:label "Necatoriasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34838> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A disorder caused by an infection with hookworms of the genus Necator, which settle in the host's small intestine, and cause abdominal pain, diarrhea, weight loss, and anemia." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C34861
+<http://purl.obolibrary.org/obo/NCIT_C34861> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A disease caused by infection with Onchocerca volvulus; symptoms may include pruritis and blindness." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C34861" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Onchocerciasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0029001" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "An infection that is caused by the nematode Onchocerca volvulus, which most commonly occurs in tropical climates, and which is transmitted by bites from a black fly. Symptoms include intense pruritus, inflammation, and swelling of skin; if the larvae migrate to the eye, blindness can occur." ;
+                                             rdfs:label "Onchocerciasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34861> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A disease caused by infection with Onchocerca volvulus; symptoms may include pruritis and blindness." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C34861> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection that is caused by the nematode Onchocerca volvulus, which most commonly occurs in tropical climates, and which is transmitted by bites from a black fly. Symptoms include intense pruritus, inflammation, and swelling of skin; if the larvae migrate to the eye, blindness can occur." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C35000
+<http://purl.obolibrary.org/obo/NCIT_C35000> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#Africa>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#CentralAmerica>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection caused by flukes of the genus Schistosoma. Signs and symptoms include fever, abdominal pain, eosinophilia and hepatosplenomegaly. If left untreated it may eventually cause liver damage leading to cirrhosis, bladder cancer and kidney failure." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C35000" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Schistosomiasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0036323" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                        "MedDRA" ,
+                                                                                        "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "Schistosoma parasite infection that is commonly seen in tropical and subtropical regions and may be transmitted through skin contact with contaminated freshwater." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P375> "Schistosomiasis" ;
+                                             rdfs:label "Schistosomiasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C35000> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection caused by flukes of the genus Schistosoma. Signs and symptoms include fever, abdominal pain, eosinophilia and hepatosplenomegaly. If left untreated it may eventually cause liver damage leading to cirrhosis, bladder cancer and kidney failure." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C35000> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "Schistosoma parasite infection that is commonly seen in tropical and subtropical regions and may be transmitted through skin contact with contaminated freshwater." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C35000> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P375> ;
+   owl:annotatedTarget "Schistosomiasis" ;
+   <http://purl.obolibrary.org/obo/NCIT_P393> "Has Synonym" ;
+   <http://purl.obolibrary.org/obo/NCIT_P394> "LLT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P395> "10039603" ;
+   <http://purl.obolibrary.org/obo/NCIT_P396> "MedDRA" ;
+   <http://purl.obolibrary.org/obo/NCIT_P397> "18.1"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C35084
+<http://purl.obolibrary.org/obo/NCIT_C35084> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C84541> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Trypanosomiasis caused by infection by Trypanosoma brucei gambiense." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C35084" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Gambian Trypanosomiasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0041232" ;
+                                             rdfs:label "Gambian Trypanosomiasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C35084> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Trypanosomiasis caused by infection by Trypanosoma brucei gambiense." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C35085
+<http://purl.obolibrary.org/obo/NCIT_C35085> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C84541> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An infection with Trypanosoma brucei rhodesiense." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C35085" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Rhodesian Trypanosomiasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0041233" ;
+                                             rdfs:label "Rhodesian Trypanosomiasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C35085> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An infection with Trypanosoma brucei rhodesiense." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C35805
+<http://purl.obolibrary.org/obo/NCIT_C35805> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C84751> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Infection by hookworms of the genus Ancylostoma." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C35805" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Ancylostomiasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0002831" ;
+                                             rdfs:label "Ancylostomiasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C35805> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Infection by hookworms of the genus Ancylostoma." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C39295
+<http://purl.obolibrary.org/obo/NCIT_C39295> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#Trematodiasis> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An infection caused by the parasite Opisthorchis viverrini. It results from the ingestion of raw or undercooked food. The clinical features vary from mild to severe and include gastrointestinal symptoms, anorexia, weight loss, hepatomegaly, and cholangitis. Patients are at an increased risk of developing cholangiocarcinoma." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C39295" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Opisthorchis Viverrini Infection" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0277005" ;
+                                             rdfs:label "Opisthorchis viverrini Infection" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C39295> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An infection caused by the parasite Opisthorchis viverrini. It results from the ingestion of raw or undercooked food. The clinical features vary from mild to severe and include gastrointestinal symptoms, anorexia, weight loss, hepatomegaly, and cholangitis. Patients are at an increased risk of developing cholangiocarcinoma." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C41352
+<http://purl.obolibrary.org/obo/NCIT_C41352> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41353> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Early yaws includes primary and secondary stages of yaws, endemic tropical treponemal nonvenereal infection: development of initial lesion at inoculation site followed by widespread dissemination of treponemes and generalized secondary granulomatous lesions that may relapse repeatedly." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C41352" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Early Yaws" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0275998" ;
+                                             rdfs:label "Early Yaws" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C41352> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Early yaws includes primary and secondary stages of yaws, endemic tropical treponemal nonvenereal infection: development of initial lesion at inoculation site followed by widespread dissemination of treponemes and generalized secondary granulomatous lesions that may relapse repeatedly." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C41353
+<http://purl.obolibrary.org/obo/NCIT_C41353> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C2890> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#Africa>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#Asia>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                                                                  :Oceania
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An endemic, infectious, nonvenereal disease in humans that presents mainly in children younger than 15 years. The disease occurs primarily in warm, humid, tropical areas of Africa, Asia, South America, and Oceania, among poor rural populations where conditions of overcrowding and poor sanitation prevail. Infection with Treponema pertenue, a subspecies of Treponema pallidum, causes the disease." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C41353" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Yaws" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0043388" ;
+                                             rdfs:label "Yaws" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C41353> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An endemic, infectious, nonvenereal disease in humans that presents mainly in children younger than 15 years. The disease occurs primarily in warm, humid, tropical areas of Africa, Asia, South America, and Oceania, among poor rural populations where conditions of overcrowding and poor sanitation prevail. Infection with Treponema pertenue, a subspecies of Treponema pallidum, causes the disease." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C41354
+<http://purl.obolibrary.org/obo/NCIT_C41354> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41353> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Late yaws is the tertiary, non-contagious stage of yaws, endemic tropical treponemal nonvenereal infection. Late yaws is characterized by destructive and deforming lesions of the skin, bones, and joints." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C41354" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Late Yaws" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C1517744" ;
+                                             rdfs:label "Late Yaws" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C41354> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Late yaws is the tertiary, non-contagious stage of yaws, endemic tropical treponemal nonvenereal infection. Late yaws is characterized by destructive and deforming lesions of the skin, bones, and joints." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C84541
+<http://purl.obolibrary.org/obo/NCIT_C84541> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/bero.owl#Africa>
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic disorder caused by protozoa of the Trypanosoma brucei species. It is transmitted by flies and is endemic in various regions of Sub-Saharan Africa. Signs and symptoms include fever, joint pain, headache, and significant swelling of the lymph nodes. If left untreated, the parasitic infection causes anemia, heart, kidney, and endocrine failure, and neurologic damage. Subsequently patients develop confusion, disruption of the sleep cycle, and mental deterioration. The infection may lead to coma and death." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C84541" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "African Trypanosomiasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0041228" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                        "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "A protozoan infection that is caused by Trypanosoma brucei, which is transmitted by tsetse flies; it is characterized by fever, joint pain, headache, and lymphadenopathy, and it may progress to multi-organ involvement." ;
+                                             rdfs:label "African Trypanosomiasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84541> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic disorder caused by protozoa of the Trypanosoma brucei species. It is transmitted by flies and is endemic in various regions of Sub-Saharan Africa. Signs and symptoms include fever, joint pain, headache, and significant swelling of the lymph nodes. If left untreated, the parasitic infection causes anemia, heart, kidney, and endocrine failure, and neurologic damage. Subsequently patients develop confusion, disruption of the sleep cycle, and mental deterioration. The infection may lead to coma and death." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84541> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "A protozoan infection that is caused by Trypanosoma brucei, which is transmitted by tsetse flies; it is characterized by fever, joint pain, headache, and lymphadenopathy, and it may progress to multi-organ involvement." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C84604
+<http://purl.obolibrary.org/obo/NCIT_C84604> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C2890> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#Africa>
+                                                                                                  :Oceania
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A cutaneous infection caused by Mycobacterium ulcerans. It presents with painless nodular swelling of the skin, leading to the formation of necrotizing ulcers." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C84604" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Buruli Ulcer" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0085568" ;
+                                             rdfs:label "Buruli Ulcer" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84604> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A cutaneous infection caused by Mycobacterium ulcerans. It presents with painless nodular swelling of the skin, leading to the formation of necrotizing ulcers." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C84629
+<http://purl.obolibrary.org/obo/NCIT_C84629> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#CentralAmerica>
+                                                                                                  <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection caused by Trypanosoma cruzi. It is transmitted by insect bites. It is characterized by an acute and chronic phase; in the acute phase patients may have fever, malaise, and swelling at the site of the insect bite. In the chronic phase patients develop hepatosplenomegaly, lymphadenopathy, cardiomyopathy and arrhythmias." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C84629" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Chagas Disease" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0041234" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                        "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "A protozoan infection that is caused by Trypanosoma cruzi; it is transmitted by triatomine insects, and is characterized by acute (fever and local swelling) and chronic (hepatosplenomegaly, lymphadenopathy, cardiomyopathy) phases." ;
+                                             rdfs:comment "Also known as American Trypanosomiasis" ;
+                                             rdfs:label "Chagas Disease" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84629> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection caused by Trypanosoma cruzi. It is transmitted by insect bites. It is characterized by an acute and chronic phase; in the acute phase patients may have fever, malaise, and swelling at the site of the insect bite. In the chronic phase patients develop hepatosplenomegaly, lymphadenopathy, cardiomyopathy and arrhythmias." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84629> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "A protozoan infection that is caused by Trypanosoma cruzi; it is transmitted by triatomine insects, and is characterized by acute (fever and local swelling) and chronic (hepatosplenomegaly, lymphadenopathy, cardiomyopathy) phases." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C84677
+<http://purl.obolibrary.org/obo/NCIT_C84677> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :endemicIn ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/bero.owl#Africa>
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection caused by Dracunculus medinensis. It is caused by drinking water contaminated with water fleas. The larvae enter the body through the intestine. Signs and symptoms include pain, edema, blisters, and ulcers." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C84677" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Dracunculiasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0013100" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "An infection that is caused by Dracunculus medinensis, which is acquired by drinking water contaminated with infected copepods. The larvae enter the body through the intestine. Signs and symptoms include pain, edema, blisters, and ulcers, with the adult female worm potentially emerging from the skin over time." ;
+                                             rdfs:label "Dracunculiasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84677> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection caused by Dracunculus medinensis. It is caused by drinking water contaminated with water fleas. The larvae enter the body through the intestine. Signs and symptoms include pain, edema, blisters, and ulcers." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84677> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection that is caused by Dracunculus medinensis, which is acquired by drinking water contaminated with infected copepods. The larvae enter the body through the intestine. Signs and symptoms include pain, edema, blisters, and ulcers, with the adult female worm potentially emerging from the skin over time." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C84682
+<http://purl.obolibrary.org/obo/NCIT_C84682> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection caused by tapeworm larvae of Echinococcus. It affects livestock and humans. It is characterized by the formation of hydatid cysts mainly in the liver, lungs, spleen, and kidneys. Rupture of the cysts may lead to shock." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C84682" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Echinococcosis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0013502" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "CPTAC" ,
+                                                                                        "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "An infection that is caused by tapeworm larvae of Echinococcus. It is characterized by the formation of hydatid cysts, mainly in the liver, lungs, spleen, and kidneys." ;
+                                             rdfs:label "Echinococcosis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84682> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection caused by tapeworm larvae of Echinococcus. It affects livestock and humans. It is characterized by the formation of hydatid cysts mainly in the liver, lungs, spleen, and kidneys. Rupture of the cysts may lead to shock." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84682> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "An infection that is caused by tapeworm larvae of Echinococcus. It is characterized by the formation of hydatid cysts, mainly in the liver, lungs, spleen, and kidneys." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C84751
+<http://purl.obolibrary.org/obo/NCIT_C84751> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection characterized by the infestation with worms, mainly in the intestine." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C84751" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Helminthiasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0018889" ;
+                                             rdfs:label "Helminthiasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C84751> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection characterized by the infestation with worms, mainly in the intestine." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C85180
+<http://purl.obolibrary.org/obo/NCIT_C85180> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic infection caused by tapeworms of the genus Taenia. Humans are infected by eating undercooked or raw meat of infected animals. It is usually an asymptomatic infection and patients may become aware of the infection by noticing segments of the tapeworm in their feces. If symptoms are present, they include nausea, abdominal pain, indigestion, constipation, or diarrhea." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C85180" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Disease or Syndrome" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Taeniasis" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0039254" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P325> "Intestinal infection with a human tapeworm (Taenia saginata, T. solium, T. asiatica), which is acquired by consumption of cysticerci in raw or undercooked food. Most infected people are asymptomatic and typically become aware of an infection via passing tapeworm segments in feces." ;
+                                             rdfs:label "Taeniasis" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C85180> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A parasitic infection caused by tapeworms of the genus Taenia. Humans are infected by eating undercooked or raw meat of infected animals. It is usually an asymptomatic infection and patients may become aware of the infection by noticing segments of the tapeworm in their feces. If symptoms are present, they include nausea, abdominal pain, indigestion, constipation, or diarrhea." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C85180> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/NCIT_P325> ;
+   owl:annotatedTarget "Intestinal infection with a human tapeworm (Taenia saginata, T. solium, T. asiatica), which is acquired by consumption of cysticerci in raw or undercooked food. Most infected people are asymptomatic and typically become aware of an infection via passing tapeworm segments in feces." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NICHD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#Africa
+<http://purl.obolibrary.org/obo/bero.owl#Africa> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> ;
+                                                 rdfs:label "Africa" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#Asia
+<http://purl.obolibrary.org/obo/bero.owl#Asia> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> ;
+                                               rdfs:label "Asia" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#CentralAmerica
+<http://purl.obolibrary.org/obo/bero.owl#CentralAmerica> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> ;
+                                                         rdfs:label "Central America" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#GeographicalZone
+<http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> rdf:type owl:Class ;
+                                                           rdfs:label "Geographical zone" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#InfectionVector
+<http://purl.obolibrary.org/obo/bero.owl#InfectionVector> rdf:type owl:Class ;
+                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :bearerOf ;
+                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent>
+                                                                          ] ;
+                                                          rdfs:label "Infection vector" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent
+<http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent> rdf:type owl:Class ;
+                                                          rdfs:label "Infectious agent" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#Leprosy
+<http://purl.obolibrary.org/obo/bero.owl#Leprosy> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C2890> ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "An infection caused by the bacterium Mycobacterium leprae" ;
+                                                  rdfs:label "Leprosy" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#NeglectedDisease
+<http://purl.obolibrary.org/obo/bero.owl#NeglectedDisease> rdf:type owl:Class ;
+                                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Neglected tropical diseases (NTDs) are a diverse group of infectious diseases that are mainly prevalent in tropical areas, where they mostly affect impoverished communities and disproportionately affect women and children. These diseases cause devastating health, social and economic consequences to more than one billion people." ;
+                                                           rdfs:label "Neglected Disease" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#NorthAmerica
+<http://purl.obolibrary.org/obo/bero.owl#NorthAmerica> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> ;
+                                                       rdfs:label "North America" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#SouthAmerica
+<http://purl.obolibrary.org/obo/bero.owl#SouthAmerica> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> ;
+                                                       rdfs:label "South America" .
+
+
+###  http://purl.obolibrary.org/obo/bero.owl#Trematodiasis
+<http://purl.obolibrary.org/obo/bero.owl#Trematodiasis> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C27864> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :endemicIn ;
+                                                                          owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                               owl:unionOf ( <http://purl.obolibrary.org/obo/bero.owl#Africa>
+                                                                                                             <http://purl.obolibrary.org/obo/bero.owl#Asia>
+                                                                                                             <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica>
+                                                                                                           )
+                                                                                             ]
+                                                                        ] ;
+                                                        <http://purl.obolibrary.org/obo/IAO_0000115> "A parasitic disorder caused by Trematode worms" ;
+                                                        rdfs:label "Trematodiasis" .
+
+
+###  http://purl.org/biotop/biotop.owl#Parasite
+<http://purl.org/biotop/biotop.owl#Parasite> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent> ;
+                                             rdfs:label "Parasite" .
+
+
+###  http://purl.org/biotop/biotop.owl#Virus
+<http://purl.org/biotop/biotop.owl#Virus> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent> ;
+                                          rdfs:label "Virus" .
+
+
+###  http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#Aedes
+<http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#Aedes> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> ;
+                                                              rdfs:label "Aedes" .
+
+
+###  http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#DengueVirus
+<http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#DengueVirus> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Virus> ;
+                                                                    rdfs:label "Dengue virus" .
+
+
+###  http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#Leishmania
+<http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#Leishmania> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+                                                                     rdfs:label "Leishmania" .
+
+
+###  http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#PhlebotomineSandFly
+<http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#PhlebotomineSandFly> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> ;
+                                                                              rdfs:label "Phlebotomine sandfly" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.owl-ontologies.com/Hospital-ver2.owl#Staff> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :make ;
+                                                                           owl:someValuesFrom :Diagnosis
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :prescribe ;
+                                                                           owl:someValuesFrom :Treatment
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :directs ;
+                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass :HealthCareInfrastructure
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :worksIn ;
+                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass :HealthCareInfrastructure
+                                                                         ] ;
+                                                         owl:disjointWith <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse> ,
+                                                                          <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+                                                         rdfs:label "Doctor" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.owl-ontologies.com/Hospital-ver2.owl#Staff> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :worksIn ;
+                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onClass :HealthCareInfrastructure
+                                                                        ] ;
+                                                        owl:disjointWith <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+                                                        rdfs:label "Nurse" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Patient
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.owl-ontologies.com/Hospital-ver2.owl#Person> ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :has ;
+                                                                            owl:someValuesFrom :ClinicalHistory
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :isAttendedBy ;
+                                                                            owl:someValuesFrom <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor>
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :isAttendedBy ;
+                                                                            owl:someValuesFrom <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse>
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :isTreatedIn ;
+                                                                            owl:someValuesFrom :HealthCareInfrastructure
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :suffers ;
+                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/NCIT_C28356>
+                                                                          ] ;
+                                                          owl:disjointWith <http://www.owl-ontologies.com/Hospital-ver2.owl#Staff> ;
+                                                          rdfs:label "Patient" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Person
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Person> rdf:type owl:Class ;
+                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :isPartOf ;
+                                                                           owl:someValuesFrom :HealthCareSystem
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :personHasID ;
+                                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :personHasName ;
+                                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                         ] ;
+                                                         owl:disjointWith :HealthCareInfrastructure ;
+                                                         rdfs:label "Person" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Staff
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Staff> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.owl-ontologies.com/Hospital-ver2.owl#Person> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :attends ;
+                                                                          owl:allValuesFrom <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient>
+                                                                        ] ;
+                                                        rdfs:label "Staff" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Ancylostoma
+:Ancylostoma rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+             rdfs:label "Ancylostoma" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Ascaris
+:Ascaris rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+         rdfs:label "Ascaris" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Bacteria
+:Bacteria rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectiousAgent> ;
+          rdfs:label "Bacteria" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Chlamydia
+:Chlamydia rdf:type owl:Class ;
+           rdfs:subClassOf :Bacteria ;
+           rdfs:label "Chlamydia" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#ClinicalHistory
+:ClinicalHistory rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :holds ;
+                                   owl:someValuesFrom :Diagnosis
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :holds ;
+                                   owl:someValuesFrom :Treatment
+                                 ] ;
+                 rdfs:label "Clinical history" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Culex
+:Culex rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> ;
+       rdfs:label "Culex" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Diagnosis
+:Diagnosis rdf:type owl:Class ;
+           rdfs:label "Diagnosis" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Dracunculus
+:Dracunculus rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+             rdfs:label "Dracunculus" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Echinococcus
+:Echinococcus rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+              rdfs:label "Echinococcus" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Europe
+:Europe rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> ;
+        rdfs:label "Europe" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Fasciola
+:Fasciola rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+          rdfs:label "Fasciola" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Filariodideae
+:Filariodideae rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+               rdfs:label "Filariodideae" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#HealthCareInfrastructure
+:HealthCareInfrastructure rdf:type owl:Class ;
+                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                            owl:onProperty :isPartOf ;
+                                            owl:someValuesFrom :HealthCareSystem
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :isDirectedBy ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor>
+                                          ] ;
+                          rdfs:label "Healthcare infrastructure" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#HealthCareSystem
+:HealthCareSystem rdf:type owl:Class ;
+                  rdfs:label "Healthcare system" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Hospital
+:Hospital rdf:type owl:Class ;
+          rdfs:subClassOf :HealthCareInfrastructure ;
+          owl:disjointWith :PrimaryHealthCareCenter ;
+          rdfs:label "Hospital" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Lyssavirus
+:Lyssavirus rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Virus> ;
+            rdfs:label "Lyssavirus" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Mycobacterium
+:Mycobacterium rdf:type owl:Class ;
+               rdfs:subClassOf :Bacteria ;
+               rdfs:label "Mycobacterium" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Necator
+:Necator rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+         rdfs:label "Necator" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Oceania
+:Oceania rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#GeographicalZone> ;
+         rdfs:label "Oceania" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Oncocerca
+:Oncocerca rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+           rdfs:label "Oncocerca" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Opistorchis
+:Opistorchis rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+             rdfs:label "Opistorchis" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#PrimaryHealthCareCenter
+:PrimaryHealthCareCenter rdf:type owl:Class ;
+                         rdfs:subClassOf :HealthCareInfrastructure ;
+                         rdfs:label "Primary healthcare center" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Schistosoma
+:Schistosoma rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+             rdfs:label "Schistosoma" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Simulium
+:Simulium rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> ;
+          rdfs:label "Simulium" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Strongyloides
+:Strongyloides rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+               rdfs:label "Strongyloides" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Taenia
+:Taenia rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+        rdfs:label "Taenia" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Treatment
+:Treatment rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :isAppliedTo ;
+                             owl:someValuesFrom <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient>
+                           ] ;
+           rdfs:label "Treatment" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Treponema
+:Treponema rdf:type owl:Class ;
+           rdfs:subClassOf :Bacteria ;
+           rdfs:label "Treponema" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#TriatomineBug
+:TriatomineBug rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> ;
+               rdfs:label "Triatomine bug" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Trichuris
+:Trichuris rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+           rdfs:label "Trichuris" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Trypanosoma
+:Trypanosoma rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/biotop/biotop.owl#Parasite> ;
+             rdfs:label "Trypanosoma" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Tse-tseFly
+:Tse-tseFly rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.obolibrary.org/obo/bero.owl#InfectionVector> ;
+            rdfs:label "Tse-tse fly" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor101
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor101> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+                                                            :attends <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient101> ;
+                                                            :directs :Hospital1 ;
+                                                            :personHasID "Doctor101" ;
+                                                            :personHasName "Priscilla Arnold" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor102
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor102> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+                                                            :personHasID "Doctor102" ;
+                                                            :personHasName "Jenna Floyd" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor103
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor103> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+                                                            :personHasID "Doctor103" ;
+                                                            :personHasName "Ollie Holloway" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor104
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor104> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+                                                            :personHasID "Doctor104" ;
+                                                            :personHasName "Marlon Carpenter" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor105
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor105> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor> ;
+                                                            :personHasID "Doctor105" ;
+                                                            :personHasName "Clayton Lynch" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse101
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse101> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse> ;
+                                                           :personHasID "Nurse101" ;
+                                                           :personHasName "James Harris" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse102
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse102> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse> ;
+                                                           :personHasID "Nurse102" ;
+                                                           :personHasName "Ann Perry" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse103
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse103> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse> ;
+                                                           :personHasID "Nurse103" ;
+                                                           :personHasName "Rachel Carter" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse104
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse104> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse> ;
+                                                           :personHasID "Nurse104" ;
+                                                           :personHasName "Margaret Martin" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse105
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse105> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse> ;
+                                                           :personHasID "Nurse105" ;
+                                                           :personHasName "Stephen Howard" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Patient101
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Patient101> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+                                                             :has :History1 ;
+                                                             :isAttendedBy <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor101> ,
+                                                                           <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse101> ;
+                                                             :isTreatedIn :Hospital1 ;
+                                                             :suffers :LeishmaniasisProcess ;
+                                                             :personHasID "Patient101" ;
+                                                             :personHasName "Angela Washington" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Patient102
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Patient102> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+                                                             :isAttendedBy <http://www.owl-ontologies.com/Hospital-ver2.owl#Nurse103> ;
+                                                             :isTreatedIn :Center1 ;
+                                                             :isTreatedWith :Treatment2 ;
+                                                             :suffers :TaeniasisProcess ;
+                                                             :personHasID "Patient102" ;
+                                                             :personHasName "Diana Foster" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Patient103
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Patient103> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+                                                             :suffers :AfricanTrypanosomiasisProcess ;
+                                                             :personHasID "Patient103" ;
+                                                             :personHasName "Patricia Henderson" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Patient104
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Patient104> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+                                                             :isTreatedIn :Center4 ;
+                                                             :personHasID "Patient104" ;
+                                                             :personHasName "Ruby Kelly" .
+
+
+###  http://www.owl-ontologies.com/Hospital-ver2.owl#Patient105
+<http://www.owl-ontologies.com/Hospital-ver2.owl#Patient105> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient> ;
+                                                             :personHasID "Patient105" ;
+                                                             :personHasName "Alan Bailey" .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Aedes_aegypti
+:Aedes_aegypti rdf:type owl:NamedIndividual ,
+                        <http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#Aedes> ;
+               :bearerOf :DEN1 ,
+                         :DEN2 ,
+                         :DEN3 ,
+                         :DEN4 .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#AfricanTrypanosomiasisProcess
+:AfricanTrypanosomiasisProcess rdf:type owl:NamedIndividual ,
+                                        <http://purl.obolibrary.org/obo/NCIT_C84541> ;
+                               :affects <http://www.owl-ontologies.com/Hospital-ver2.owl#Patient104> ;
+                               :endemicIn :Tunisia ;
+                               :hasAgent :Trypanosoma_brucei ;
+                               :hasVector :Glossina_sp .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Ancylostoma_duodenale
+:Ancylostoma_duodenale rdf:type owl:NamedIndividual ,
+                                :Ancylostoma .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#AncylostomiasisProcess
+:AncylostomiasisProcess rdf:type owl:NamedIndividual ,
+                                 <http://purl.obolibrary.org/obo/NCIT_C35805> ;
+                        :hasAgent :Ancylostoma_duodenale .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#AscariasisProcess
+:AscariasisProcess rdf:type owl:NamedIndividual ,
+                            <http://purl.obolibrary.org/obo/NCIT_C128392> ;
+                   :hasAgent :Ascaris_lumbricoides .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Ascaris_lumbricoides
+:Ascaris_lumbricoides rdf:type owl:NamedIndividual ,
+                               :Ascaris .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Australia
+:Australia rdf:type owl:NamedIndividual ,
+                    :Oceania .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Brazil
+:Brazil rdf:type owl:NamedIndividual ,
+                 <http://purl.obolibrary.org/obo/bero.owl#SouthAmerica> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Brugia_malayi
+:Brugia_malayi rdf:type owl:NamedIndividual ,
+                        :Filariodideae .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#BuruliUlcerProcess
+:BuruliUlcerProcess rdf:type owl:NamedIndividual ,
+                             <http://purl.obolibrary.org/obo/NCIT_C84604> ;
+                    :hasAgent :Mycobacterium_ulcerans .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Center1
+:Center1 rdf:type owl:NamedIndividual ,
+                  :PrimaryHealthCareCenter .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Center2
+:Center2 rdf:type owl:NamedIndividual ,
+                  :PrimaryHealthCareCenter ;
+         :isDirectedBy <http://www.owl-ontologies.com/Hospital-ver2.owl#Doctor105> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Center3
+:Center3 rdf:type owl:NamedIndividual ,
+                  :PrimaryHealthCareCenter .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Center4
+:Center4 rdf:type owl:NamedIndividual ,
+                  :PrimaryHealthCareCenter .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Center5
+:Center5 rdf:type owl:NamedIndividual ,
+                  :PrimaryHealthCareCenter .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#ChagasDiseaseProcess
+:ChagasDiseaseProcess rdf:type owl:NamedIndividual ,
+                               <http://purl.obolibrary.org/obo/NCIT_C84629> ;
+                      :hasAgent :Trypanosoma_cruzi ;
+                      :hasVector :Triatoma_sanguisuga .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Chlamydia_trachomatis
+:Chlamydia_trachomatis rdf:type owl:NamedIndividual ,
+                                :Chlamydia .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Culex_quinquefasciatus
+:Culex_quinquefasciatus rdf:type owl:NamedIndividual ,
+                                 :Culex ;
+                        :bearerOf :Brugia_malayi ,
+                                  :Wuchereria_bancrofti .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#DEN1
+:DEN1 rdf:type owl:NamedIndividual ,
+               <http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#DengueVirus> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#DEN2
+:DEN2 rdf:type owl:NamedIndividual ,
+               <http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#DengueVirus> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#DEN3
+:DEN3 rdf:type owl:NamedIndividual ,
+               <http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#DengueVirus> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#DEN4
+:DEN4 rdf:type owl:NamedIndividual ,
+               <http://www.cin.ufpe.br/~ntdo/OWLFiles/DengueFever.owl#DengueVirus> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#DengueProcess
+:DengueProcess rdf:type owl:NamedIndividual ,
+                        <http://purl.obolibrary.org/obo/NCIT_C34528> ;
+               :hasAgent :DEN1 ,
+                         :DEN2 ,
+                         :DEN3 ,
+                         :DEN4 ;
+               :hasVector :Aedes_aegypti .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Diagnosis1
+:Diagnosis1 rdf:type owl:NamedIndividual ,
+                     :Diagnosis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Diagnosis2
+:Diagnosis2 rdf:type owl:NamedIndividual ,
+                     :Diagnosis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Diagnosis3
+:Diagnosis3 rdf:type owl:NamedIndividual ,
+                     :Diagnosis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Diagnosis4
+:Diagnosis4 rdf:type owl:NamedIndividual ,
+                     :Diagnosis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Diagnosis5
+:Diagnosis5 rdf:type owl:NamedIndividual ,
+                     :Diagnosis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#DracunculiasisProcess
+:DracunculiasisProcess rdf:type owl:NamedIndividual ,
+                                <http://purl.obolibrary.org/obo/NCIT_C84677> ;
+                       :hasAgent :Dracunculus_medinensis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Dracunculus_medinensis
+:Dracunculus_medinensis rdf:type owl:NamedIndividual ,
+                                 :Dracunculus .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#EchinococcosisProcess
+:EchinococcosisProcess rdf:type owl:NamedIndividual ,
+                                <http://purl.obolibrary.org/obo/NCIT_C84682> ;
+                       :hasAgent :Echinococcus_granulosus .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Echinococcus_granulosus
+:Echinococcus_granulosus rdf:type owl:NamedIndividual ,
+                                  :Echinococcus .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Fasciola_gigantica
+:Fasciola_gigantica rdf:type owl:NamedIndividual ,
+                             :Fasciola .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Fasciola_hepatica
+:Fasciola_hepatica rdf:type owl:NamedIndividual ,
+                            :Fasciola .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#FascioliasisProcess
+:FascioliasisProcess rdf:type owl:NamedIndividual ,
+                              <http://purl.obolibrary.org/obo/NCIT_C128387> ;
+                     :hasAgent :Fasciola_gigantica ,
+                               :Fasciola_hepatica .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#FilariasisProcess
+:FilariasisProcess rdf:type owl:NamedIndividual ,
+                            <http://purl.obolibrary.org/obo/NCIT_C128360> ;
+                   :hasAgent :Brugia_malayi ,
+                             :Wuchereria_bancrofti ;
+                   :hasVector :Culex_quinquefasciatus .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Glossina_sp
+:Glossina_sp rdf:type owl:NamedIndividual ,
+                      :Tse-tseFly ;
+             :bearerOf :Trypanosoma_brucei .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Guatemala
+:Guatemala rdf:type owl:NamedIndividual ,
+                    <http://purl.obolibrary.org/obo/bero.owl#CentralAmerica> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#History1
+:History1 rdf:type owl:NamedIndividual ,
+                   :ClinicalHistory .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#History2
+:History2 rdf:type owl:NamedIndividual ,
+                   :ClinicalHistory .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#History3
+:History3 rdf:type owl:NamedIndividual ,
+                   :ClinicalHistory .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#History4
+:History4 rdf:type owl:NamedIndividual ,
+                   :ClinicalHistory .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#History5
+:History5 rdf:type owl:NamedIndividual ,
+                   :ClinicalHistory .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Hospital1
+:Hospital1 rdf:type owl:NamedIndividual ,
+                    :Hospital .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Hospital2
+:Hospital2 rdf:type owl:NamedIndividual ,
+                    :Hospital .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Hospital3
+:Hospital3 rdf:type owl:NamedIndividual ,
+                    :Hospital .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Hospital4
+:Hospital4 rdf:type owl:NamedIndividual ,
+                    :Hospital .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Hospital5
+:Hospital5 rdf:type owl:NamedIndividual ,
+                    :Hospital .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#India
+:India rdf:type owl:NamedIndividual ,
+                <http://purl.obolibrary.org/obo/bero.owl#Asia> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Leishmania_braziliensis
+:Leishmania_braziliensis rdf:type owl:NamedIndividual ,
+                                  <http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#Leishmania> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Leishmania_donovani
+:Leishmania_donovani rdf:type owl:NamedIndividual ,
+                              <http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#Leishmania> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#LeishmaniasisProcess
+:LeishmaniasisProcess rdf:type owl:NamedIndividual ,
+                               <http://purl.obolibrary.org/obo/NCIT_C34767> ;
+                      :hasAgent :Leishmania_braziliensis ,
+                                :Leishmania_donovani ;
+                      :hasVector :Phlebotomus_sp .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#LeprosyProcess
+:LeprosyProcess rdf:type owl:NamedIndividual ,
+                         <http://purl.obolibrary.org/obo/bero.owl#Leprosy> ;
+                :hasAgent :Mycobacterium_leprae .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Mexico
+:Mexico rdf:type owl:NamedIndividual ,
+                 <http://purl.obolibrary.org/obo/bero.owl#NorthAmerica> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Mycobacterium_leprae
+:Mycobacterium_leprae rdf:type owl:NamedIndividual ,
+                               :Mycobacterium .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Mycobacterium_ulcerans
+:Mycobacterium_ulcerans rdf:type owl:NamedIndividual ,
+                                 :Mycobacterium .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Necator_americanus
+:Necator_americanus rdf:type owl:NamedIndividual ,
+                             :Necator .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#NecatoriasisProcess
+:NecatoriasisProcess rdf:type owl:NamedIndividual ,
+                              <http://purl.obolibrary.org/obo/NCIT_C34838> ;
+                     :hasAgent :Necator_americanus .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Oncocerca_volvulus
+:Oncocerca_volvulus rdf:type owl:NamedIndividual ,
+                             :Oncocerca .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#OncocerciasisProcess
+:OncocerciasisProcess rdf:type owl:NamedIndividual ,
+                               <http://purl.obolibrary.org/obo/NCIT_C34861> ;
+                      :hasAgent :Oncocerca_volvulus ;
+                      :hasVector :Simulium_sp .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#OpistorchisInfectionProcess
+:OpistorchisInfectionProcess rdf:type owl:NamedIndividual ,
+                                      <http://purl.obolibrary.org/obo/NCIT_C39295> ;
+                             :hasAgent :Opistorchis_viverrini .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Opistorchis_viverrini
+:Opistorchis_viverrini rdf:type owl:NamedIndividual ,
+                                :Opistorchis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Phlebotomus_sp
+:Phlebotomus_sp rdf:type owl:NamedIndividual ,
+                         <http://www.cin.ufpe.br/~ntdo/OWLFiles/Leishmaniasis.owl#PhlebotomineSandFly> ;
+                :bearerOf :Leishmania_braziliensis ,
+                          :Leishmania_donovani .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#RABV
+:RABV rdf:type owl:NamedIndividual ,
+               :Lyssavirus .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#RabiesProcess
+:RabiesProcess rdf:type owl:NamedIndividual ,
+                        <http://purl.obolibrary.org/obo/NCIT_C28182> ;
+               :hasAgent :RABV .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Schistosoma_japonicum
+:Schistosoma_japonicum rdf:type owl:NamedIndividual ,
+                                :Schistosoma .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Schistosoma_mansoni
+:Schistosoma_mansoni rdf:type owl:NamedIndividual ,
+                              :Schistosoma .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#SchistosomiasisProcess
+:SchistosomiasisProcess rdf:type owl:NamedIndividual ,
+                                 <http://purl.obolibrary.org/obo/NCIT_C35000> ;
+                        :hasAgent :Schistosoma_japonicum ,
+                                  :Schistosoma_mansoni .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Simulium_sp
+:Simulium_sp rdf:type owl:NamedIndividual ,
+                      :Simulium ;
+             :bearerOf :Oncocerca_volvulus .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Spain
+:Spain rdf:type owl:NamedIndividual ,
+                :Europe .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Strongyloides_stercolaris
+:Strongyloides_stercolaris rdf:type owl:NamedIndividual ,
+                                    :Strongyloides .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#StrongyloidiasisProcess
+:StrongyloidiasisProcess rdf:type owl:NamedIndividual ,
+                                  <http://purl.obolibrary.org/obo/NCIT_C128398> ;
+                         :hasAgent :Strongyloides_stercolaris .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Sudan
+:Sudan rdf:type owl:NamedIndividual ,
+                <http://purl.obolibrary.org/obo/bero.owl#Africa> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Taenia_sagitalis
+:Taenia_sagitalis rdf:type owl:NamedIndividual ,
+                           :Taenia .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Taenia_solium
+:Taenia_solium rdf:type owl:NamedIndividual ,
+                        :Taenia .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#TaeniasisProcess
+:TaeniasisProcess rdf:type owl:NamedIndividual ,
+                           <http://purl.obolibrary.org/obo/NCIT_C85180> ;
+                  :hasAgent :Taenia_sagitalis ,
+                            :Taenia_solium .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#TrachomaProcess
+:TrachomaProcess rdf:type owl:NamedIndividual ,
+                          <http://purl.obolibrary.org/obo/NCIT_C34463> ;
+                 :hasAgent :Chlamydia_trachomatis .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Treatment1
+:Treatment1 rdf:type owl:NamedIndividual ,
+                     :Treatment .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Treatment2
+:Treatment2 rdf:type owl:NamedIndividual ,
+                     :Treatment .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Treatment3
+:Treatment3 rdf:type owl:NamedIndividual ,
+                     :Treatment .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Treatment4
+:Treatment4 rdf:type owl:NamedIndividual ,
+                     :Treatment .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Treatment5
+:Treatment5 rdf:type owl:NamedIndividual ,
+                     :Treatment .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Treponema_pallidum
+:Treponema_pallidum rdf:type owl:NamedIndividual ,
+                             :Treponema .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Triatoma_sanguisuga
+:Triatoma_sanguisuga rdf:type owl:NamedIndividual ,
+                              :TriatomineBug ;
+                     :bearerOf :Trypanosoma_cruzi .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#TrichuriasisProcess
+:TrichuriasisProcess rdf:type owl:NamedIndividual ,
+                              <http://purl.obolibrary.org/obo/NCIT_C128399> ;
+                     :hasAgent :Trichuris_trichiura .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Trichuris_trichiura
+:Trichuris_trichiura rdf:type owl:NamedIndividual ,
+                              :Trichuris .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Trypanosoma_brucei
+:Trypanosoma_brucei rdf:type owl:NamedIndividual ,
+                             :Trypanosoma .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Trypanosoma_cruzi
+:Trypanosoma_cruzi rdf:type owl:NamedIndividual ,
+                            :Trypanosoma .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Tunisia
+:Tunisia rdf:type owl:NamedIndividual ,
+                  <http://purl.obolibrary.org/obo/bero.owl#Africa> .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#Wuchereria_bancrofti
+:Wuchereria_bancrofti rdf:type owl:NamedIndividual ,
+                               :Filariodideae .
+
+
+###  http://www.semanticweb.org/Extended_NTDO#YawsProcess
+:YawsProcess rdf:type owl:NamedIndividual ,
+                      <http://purl.obolibrary.org/obo/NCIT_C41353> ;
+             :hasAgent :Treponema_pallidum .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
